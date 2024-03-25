@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+
+    <title>V</title>
+    <style>
+       
+       
+            body {
+      margin: 0%;
+       padding: 0%;
+  font-family: Arial Black, sans-serif;
+    }
+    
+ .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	position: unset;
+ }
+ .screen {		
+	height: 750px;
+	width: 550px;	
+	box-shadow: 0px 0px 24px #000000;
+}
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+    
+}
+
+    
+    
+    .horizantal{
+        position: absolute;
+        background-color: #4FCBD5;
+        height: 39px;
+        width: 12px;
+        top: 25px;
+        left: 220px;
+        border-radius: 50px 0px;
+        z-index: 1;
+    }
+    .vertical{
+        position: absolute;
+        background-image: linear-gradient(to right, #4FCBD5, #12B6B8, #4FCBD5);
+        height: 12px;
+        width: 40px;
+        top: 39.5px;
+        left: 206.5px;
+        border-radius: 0px 50px;
+    }
+    .care{
+    
+        position: absolute;
+        top: 38px;
+        left: 250px;
+        text-align: start;
+        font-size: 12px;
+        font-family: arial black;
+        color:  #2A5F8B;
+    }
+    .center{
+        position: absolute;
+        background-image: linear-gradient(to bottom, #1c9fe5, #0a6eb0);
+        height: 80px;
+        width: 440px;
+        top: 305px;
+        left: 55px;
+        border-radius: 50px 0px;
+        
+    
+    }
+    .clinic{
+    position: absolute;
+    top: 317px;
+    left: 103px;
+    text-align: center;
+        font-size: 35px;
+        color: white;
+    
+    }
+    .rectangle{
+    position: absolute;
+    top: 385px;
+    left: 112px;
+    width: 320px;
+    height: 35px;
+    background-color: #33C9D7;
+    }
+    .text1{
+    position: absolute;
+    top: 388px;
+    left: 138px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+    }
+    .square1{
+    position: absolute;
+    top: 425px;
+    left: 372px;
+    width: 170px;
+    height: 85px;
+    background-color: #1D68A9;
+    border-radius: 20px 0px 20px 0px;
+    
+    }
+    
+    .img2{
+    
+        position: absolute;
+        top: 420px;
+        right: 15px;
+        width: 170px;
+        height: 85px;
+        border-radius:20px 0px 20px 0px;
+    
+    }
+    
+    .square2{
+    position: absolute;
+    top: 505px;
+    right: 0px;
+    width: 200px;
+    height: 40px;
+    background-color: #026EB7;
+    border-radius: 25px 0px 0px 0px ;
+    
+    }
+    .square3{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 180px;
+    height: 155px;
+    background-color: #38C8D0;
+    
+    }
+    .outher{
+      position: absolute;
+      top: 512px;
+      color: white;
+      right: 20px;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;  
+    }
+    .about{
+    position: absolute;
+    top: 420px;
+    left: 45px;
+    text-align: start;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1968AB;
+    
+    }
+    .a{
+        position: absolute;
+    top: 399px;
+    left: 45px;
+    text-align: start;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #AEACAD;
+    
+    }
+    .para1{
+        position: absolute;
+    top: 450px;
+    left: 45px;
+    text-align: start;
+    font-size: 10px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #53C3C4;
+    }
+    .line1{
+    position: absolute;
+    top: 507px;
+    left: 45px;
+    width: 285px;
+    height: 1px;
+    background-color: black;
+    }
+    .attention{
+        position: absolute;
+    top: 507px;
+    left: 219px;
+    text-align: start;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #196AAC;
+    text-align: end;
+    }
+    .for{
+        position: absolute;
+    top: 520px;
+    left: 257px;
+    text-align: start;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #196AAC;
+    text-align: end;
+    
+    }
+    .dot1 {
+        height: 30px;
+      width: 30px;
+      background-color: #2869A9;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      top: 540px;
+      left: 49px;
+      position: absolute;
+    }
+    .dot2 {
+        height: 30px;
+      width: 30px;
+      background-color: #2869A9;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      top: 540px;
+      left: 160px;
+      position: absolute;
+    }
+    .dot3 {
+        height: 30px;
+      width: 30px;
+      background-color: #2869A9;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      top: 540px;
+      left: 270px;
+      position: absolute;
+    }
+    .c1{
+    position: absolute;
+    font-size: 6px;
+    top: 573px;
+    left: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #286FBF;
+    text-align: center;
+    
+    }
+    .c2{
+    position: absolute;
+    font-size: 6px;
+    top: 573px;
+    left: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #286FBF;
+    text-align: center;
+    }
+    .c3{
+    position: absolute;
+    font-size: 6px;
+    top: 573px;
+    left: 275px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #286FBF;
+    text-align: center;
+    }
+    .img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 350px;
+    width: 550px;
+    border-radius: 0px 0px 50px 50px ;
+    
+    }
+    
+    .logo1{
+    
+        position: absolute;
+        font-size: 10px;  top: 549px; left: 57px;
+        color: white;
+    }
+    .logo2{
+    
+    position: absolute;
+    font-size: 35px;  top: 539px; left: 46px;
+    color: white;
+    }
+    
+    .logo3{
+    
+    position: absolute;
+    font-size: 10px;  top: 549px; left: 175px;
+    color: white;
+    }
+    .logo4{
+    
+    position: absolute;
+    font-size: 25px;  top: 540px; left: 276px;
+    color: white;
+    }
+    .logo5{
+    
+    position: absolute;
+    font-size:30px;  top: 540px; left: 170px;
+    color: white;
+    }
+    .linel1{
+        position: absolute;
+        background-color: #286FBF;
+        height: 1px;
+        top: 590px;
+        left: 40px;
+        width: 50px;
+    }
+    .linel2{
+        position: absolute;
+        background-color: #286FBF;
+        height: 1px;
+        top: 590px;
+        left: 153px;
+        width: 50px;
+    }
+    .linel3{
+        position: absolute;
+        background-color: #286FBF;
+        height: 1px;
+        top: 590px;
+        left: 260px;
+        width: 50px;
+    }
+    .d1{
+    position: absolute;
+    height: 20px;
+      width: 20px;
+      background-color: #286FBF;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      bottom: 20px;
+      left: 220px;
+    
+    }
+    .d2{
+    position: absolute;
+    height: 20px;
+      width: 20px;
+      background-color: #286FBF;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      bottom: 20px;
+      left: 260px;
+    
+    }
+    .d3{
+    position: absolute;
+    height: 20px;
+      width: 20px;
+      background-color: #286FBF;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      bottom: 20px;
+      left: 302px;
+    
+    }
+    .dicon1{
+        position: absolute;
+    
+        font-size: 15px;
+      text-align: center;
+      bottom: 21px;
+      left: 223px;
+      color: white;
+    
+    }
+    .dicon2{
+    position: absolute;
+    font-size: 15px;
+      text-align: center;
+      bottom: 21px;
+      left: 263px;
+      color: white;
+    
+    
+    }
+    .dicon3{
+    position: absolute;
+    font-size: 15px;
+      text-align: center;
+      bottom: 20px;
+      left: 307px;
+      color: white;
+    
+    
+    }
+    .qrbox{
+    
+        position: absolute;
+        background-color: #1968AB;
+        height: 50px;
+        width: 50px;
+        border-radius: 10px 0px;
+        bottom: 0px;
+        left: 345px;
+    }
+    .qrimg{
+        position: absolute;
+        
+        font-size: 40px;
+        top: 707px;
+        left: 354px;
+        z-index: 1;
+        
+        }
+        .w{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        z-index: 1;
+        top: 706px;
+        left: 350px;
+        
+        }
+    .para0{
+        position: absolute;
+        font-size: 9px;
+        bottom: 40px;
+        right: 9px;
+        text-align: end;
+        color: white;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width:450px ){
+        body {
+          margin: 0%;
+           padding: 0%;
+      font-family: Arial Black, sans-serif;
+        }
+        
+     .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        position: unset;
+     }
+     .screen {		
+        width: 350px;	
+        box-shadow: 0px 0px 24px #000000;
+        position: absolute;
+    }
+    .screen__content {
+        z-index: 1;
+        position: relative;	
+        height: 100%;
+    }
+    
+    
+    .horizantal{
+        position: absolute;
+        background-color: #4FCBD5;
+        height: 39px;
+        width: 12px;
+        top: 25px;
+        left: 220px;
+        border-radius: 50px 0px;
+        z-index: 1;
+    }
+    .vertical{
+        position: absolute;
+        background-image: linear-gradient(to right, #4FCBD5, #12B6B8, #4FCBD5);
+        height: 12px;
+        width: 40px;
+        top: 39.5px;
+        left: 206.5px;
+        border-radius: 0px 50px;
+    }
+    .care{
+    
+        position: absolute;
+        top: 39px;
+        left: 250px;
+        text-align: start;
+        font-size: 11px;
+        font-family: arial black;
+        color:  #2A5F8B;
+    }
+    .center{
+        position: absolute;
+        background-image: linear-gradient(to bottom, #1c9fe5, #0a6eb0);
+        height: 80px;
+        width: 420px;
+        top: 320px;
+        left: 65px;
+        border-radius: 50px 0px;
+        
+    
+    }
+    .clinic{
+    position: absolute;
+    top: 320px;
+    left: 150px;
+    text-align: center;
+        font-size: 25px;
+        color: white;
+    
+    }
+    .rectangle{
+    position: absolute;
+    top: 400px;
+    left: 112px;
+    width: 320px;
+    height: 35px;
+    background-color: #33C9D7;
+    }
+    .text1{
+    position: absolute;
+    top: 388px;
+    left: 138px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+    }
+    .square1{
+    position: absolute;
+    top: 425px;
+    left: 372px;
+    width: 170px;
+    height: 85px;
+    background-color: #1D68A9;
+    border-radius: 20px 0px 20px 0px;
+    
+    }
+    .img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 370px;
+    width: 550px;
+    border-radius: 0px 0px 50px 50px ;
+    
+    }
+    .img2{
+    
+        position: absolute;
+        top: 420px;
+        right: 15px;
+        width: 170px;
+        height: 85px;
+        border-radius:20px 0px 20px 0px;
+    
+    }
+    
+    .square2{
+    position: absolute;
+    top: 505px;
+    right: 0px;
+    width: 200px;
+    height: 40px;
+    background-color: #026EB7;
+    border-radius: 25px 0px 0px 0px ;
+    
+    }
+    .square3{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 180px;
+    height: 155px;
+    background-color: #38C8D0;
+    
+    }
+    .outher{
+      position: absolute;
+      top: 512px;
+      color: white;
+      right: 20px;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;  
+    }
+    .about{
+    position: absolute;
+    top: 420px;
+    left: 45px;
+    text-align: start;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1968AB;
+    
+    }
+    .a{
+        position: absolute;
+    top: 399px;
+    left: 45px;
+    text-align: start;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #AEACAD;
+    
+    }
+    .para1{
+        position: absolute;
+    top: 450px;
+    left: 45px;
+    text-align: start;
+    font-size: 10px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #53C3C4;
+    }
+    .line1{
+    position: absolute;
+    top: 507px;
+    left: 45px;
+    width: 285px;
+    height: 1px;
+    background-color: black;
+    }
+    .attention{
+        position: absolute;
+    top: 507px;
+    left: 219px;
+    text-align: start;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #196AAC;
+    text-align: end;
+    }
+    .for{
+        position: absolute;
+    top: 520px;
+    left: 257px;
+    text-align: start;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #196AAC;
+    text-align: end;
+    
+    }
+    .dot1 {
+        height: 30px;
+      width: 30px;
+      background-color: #2869A9;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      top: 540px;
+      left: 49px;
+      position: absolute;
+    }
+    .dot2 {
+        height: 30px;
+      width: 30px;
+      background-color: #2869A9;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      top: 540px;
+      left: 160px;
+      position: absolute;
+    }
+    .dot3 {
+        height: 30px;
+      width: 30px;
+      background-color: #2869A9;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      top: 540px;
+      left: 270px;
+      position: absolute;
+    }
+    .c1{
+    position: absolute;
+    font-size: 6px;
+    top: 573px;
+    left: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #286FBF;
+    text-align: center;
+    
+    }
+    .c2{
+    position: absolute;
+    font-size: 6px;
+    top: 573px;
+    left: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #286FBF;
+    text-align: center;
+    }
+    .c3{
+    position: absolute;
+    font-size: 6px;
+    top: 573px;
+    left: 275px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #286FBF;
+    text-align: center;
+    }
+   
+    
+    .logo1{
+    
+        position: absolute;
+        font-size: 10px;  top: 549px; left: 57px;
+        color: white;
+    }
+    .logo2{
+    
+    position: absolute;
+    font-size: 35px;  top: 539px; left: 46px;
+    color: white;
+    }
+    
+    .logo3{
+    
+    position: absolute;
+    font-size: 10px;  top: 549px; left: 175px;
+    color: white;
+    }
+    .logo4{
+    
+    position: absolute;
+    font-size: 25px;  top: 540px; left: 276px;
+    color: white;
+    }
+    .logo5{
+    
+    position: absolute;
+    font-size:30px;  top: 540px; left: 170px;
+    color: white;
+    }
+    .linel1{
+        position: absolute;
+        background-color: #286FBF;
+        height: 1px;
+        top: 590px;
+        left: 40px;
+        width: 50px;
+    }
+    .linel2{
+        position: absolute;
+        background-color: #286FBF;
+        height: 1px;
+        top: 590px;
+        left: 153px;
+        width: 50px;
+    }
+    .linel3{
+        position: absolute;
+        background-color: #286FBF;
+        height: 1px;
+        top: 590px;
+        left: 260px;
+        width: 50px;
+    }
+    .d1{
+    position: absolute;
+    height: 20px;
+      width: 20px;
+      background-color: #286FBF;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      bottom: 20px;
+      left: 220px;
+    
+    }
+    .d2{
+    position: absolute;
+    height: 20px;
+      width: 20px;
+      background-color: #286FBF;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      bottom: 20px;
+      left: 260px;
+    
+    }
+    .d3{
+    position: absolute;
+    height: 20px;
+      width: 20px;
+      background-color: #286FBF;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      bottom: 20px;
+      left: 302px;
+    
+    }
+    .dicon1{
+        position: absolute;
+    
+        font-size: 15px;
+      text-align: center;
+      bottom: 21px;
+      left: 223px;
+      color: white;
+    
+    }
+    .dicon2{
+    position: absolute;
+    font-size: 15px;
+      text-align: center;
+      bottom: 21px;
+      left: 263px;
+      color: white;
+    
+    
+    }
+    .dicon3{
+    position: absolute;
+    font-size: 15px;
+      text-align: center;
+      bottom: 20px;
+      left: 307px;
+      color: white;
+    
+    
+    }
+    .qrbox{
+    
+        position: absolute;
+        background-color: #1968AB;
+        height: 50px;
+        width: 50px;
+        border-radius: 10px 0px;
+        bottom: 0px;
+        left: 345px;
+    }
+    .qrimg{
+        position: absolute;
+        
+        font-size: 40px;
+        top: 657px;
+        left: 354px;
+        z-index: 1;
+        
+        }
+        .w{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        z-index: 1;
+        top: 655.5px;
+        left: 350px;
+        
+        }
+    .para0{
+        position: absolute;
+        font-size: 9px;
+        bottom: 40px;
+        right: 9px;
+        text-align: end;
+        color: white;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </style>
+</head>
+<body>
+<div class="container">
+<div class="screen">
+    <div class="screen__content">
+      
+<div><img src="image1.jpg" class="img" >
+<div class="horizantal">
+</div>
+<div class="vertical"></div>
+</div>
+
+<div class="care">HEALTHY CARE</div>
+
+<div class="center"></div>
+<div class="clinic">MEDICAL&nbsp;CLINIC</div>
+<div class="rectangle"></div>
+<div class="text1">LET US <b>TACK</b> CARE OF YOU</div>
+<div class="square1"></div>
+<img src="image2.jpg" class="img2">
+<div class="square2" ></div>
+<div class="outher">OUR SERVICE</div>
+<div class="square3"></div>
+<div class="about">ABOUT <b style="color: #1968AB; font-size: 25px;">US</b></div>
+
+
+<div class="a"><i class="fa fa-quote-left" ></i></div>
+
+
+<div class="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br> do eiusmod tempor incididunt ut labore et dolore magna ali<br>qua. Quis ipsum suspendisse ultrices gravida Risus commo<br>do viverra.
+</div>
+<div class="line1"></div>
+<div class="attention">Special Attention</div>
+<div class="for">For <b style="color: #1968AB;">COVID</b></div>
+
+
+<div class="dot1"></div>
+    <div class="dot2"></div>
+    <div class="dot3"></div>
+
+
+
+
+<div class="logo1">24</div>
+    <i class="material-icons logo2" >loop </i>
+    <div><i class="fa fa-comment logo3" ></i></div>
+    <div><i class="fa fa-user logo4" ></i></div>
+    <div><i class="fa fa-mobile logo5" ></i></div>
+
+
+    <div class="linel1"></div>
+    <div class="linel2"></div>
+    <div class="linel3"></div>
+
+
+<div class="c1"><b>VIRTUAL<br>ASSISTENCE</b></div>
+<div class="c2"><b>NQUIRIES AT<br>ANY TIME</b></div>
+<div class="c3"><b>COVID<br>CARES</b></div>
+
+
+
+
+
+<div style="font-size: 10px; font-family: arial black; color: #1968AB; bottom: 45px; left: 40px; position: absolute;">CONTACT US<br> <h  style="font-weight: lighter; font-size: 12px; font-family: Arial, Helvetica, sans-serif;">00 54 9 342 547812<br>email@youremail.com</h></div>
+<div style="font-size: 18px; bottom: 20px; left: 21px; position: absolute; color: #1968AB;"><i class="fa fa-globe"> <h style="font-size: 12px; font-family: Arial, Helvetica, sans-serif;">WWW.YOURWEBSITE.COM</h4></i></div>
+
+    <div class="d1"></div>
+    <div class="d2"></div>
+    <div class="d3"></div>
+
+
+    <div > <i class="fa fa-twitter dicon1"></i></div>
+    <div ><i class="fa fa-instagram dicon2"></i>  </div>
+    <div ><i class="fa fa-facebook dicon3"></i></div>
+<div class="w"></div>
+<div class="qrbox"></div>
+<div><i class="fa fa-qrcode qrimg" style="color: black;"></i><div>
+
+<div class="para0"><b>Lorem Ipsum </b><br> Lorem ipsum dolor sit amet consectetur<br>adipipscing elt,sed do<b><br>Lorem Ipsum</b><br> Lorem ipsum dolor sit amet consectetur<br>adipipscing elt,sed do<br><b>Lorem Ipsum</b><br> Lorem ipsum dolor sit amet consectetur<br>adipipscing elt,sed do<br><b></b><div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+		</body>
+		</html>
